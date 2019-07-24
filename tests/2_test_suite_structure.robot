@@ -14,3 +14,4 @@ As a visitor I can search for articles
     Given I am on the chromedriver site
     When I search for a valid term using the search bar
     Then I see relavent results
+    Sleep  10
