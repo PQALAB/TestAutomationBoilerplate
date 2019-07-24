@@ -11,6 +11,7 @@ Open local browser
 Default Setup
     Open local browser
     Log Down Speed
+    Set Selenium Speed  0.5
 
 Default Teardown
     [Documentation]  Default teardown. Disconnects browser so BS knows when to stop the session.
