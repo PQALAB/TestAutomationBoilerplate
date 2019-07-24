@@ -1,0 +1,6 @@
+selenium
+requests
+robotframework
+robotframework-seleniumlibrary
+robotframework-debuglibrary
+robotframework-requests

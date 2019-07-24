@@ -1,0 +1,11 @@
+# Python compiled cache
+**/__pycache__
+
+# virtualenv
+**/.venv
+**/venv
+**/ENV
+
+**/results
+**/.vscode
+**/.idea
