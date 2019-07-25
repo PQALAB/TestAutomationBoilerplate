@@ -1,1 +1,1 @@
-python3 -m robot --pythonpath resources/ -d results tests/
+python3 -m robot resources/ -d results tests/
