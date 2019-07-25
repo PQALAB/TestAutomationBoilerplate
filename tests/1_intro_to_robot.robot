@@ -11,6 +11,7 @@ Test Case 1
     Should Not Be equal  1  2
     @{list}=  Create List  1  2  3  4
     Log To Console  ${list}
+    Should Contain  ${list}  2
     Set Log Level  DEBUG
 
 Test Case 2
@@ -25,6 +26,13 @@ Test Case 3
     ...  or you can write your own keyword
     My custom keyword
     My custom keyword  This is a custom keyword with arguments!
+
+Task 1
+    [Documentation]  Create a test case which 
+    ...  1) logs something to the console
+    ...  2) checks that two numbers are equal
+    ...  3) checks that a word is in a list of words
+    Fail  msg=Not yet implemented
 
 *** Keywords ***
 My custom keyword
