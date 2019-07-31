@@ -23,5 +23,6 @@ As a visitor I can make a search without results
 Task 2
     [Documentation]  Write a test which verifies that the 
     ...  chromedriver homepage (http://chromedriver.chromium.org/home)
-    ...  contains a link to the Downloads page using Gherkin style
+    ...  contains a link to the Downloads page and has chromedriver 
+    ...  74 available for download using Gherkin style
     Fail  msg=Not yet implemented
