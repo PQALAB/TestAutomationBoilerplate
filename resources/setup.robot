@@ -14,5 +14,4 @@ Default Setup
     Set Selenium Speed  0.5
 
 Default Teardown
-    [Documentation]  Default teardown. Disconnects browser so BS knows when to stop the session.
     Close Browser
