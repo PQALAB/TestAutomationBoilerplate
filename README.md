@@ -23,9 +23,11 @@ let body = session.find.css("#sign-in")
 session.execute("arguments[0].remove()", [body])
 ```
 
-Then this code is sent to the webdriver at the endpoint `{webdriver url}/session/{session id}/element`
+Then this code is sent to the webdriver at the endpoint `{webdriver url}/session/{session id}/element` where it's inserted into the browser and the result is returned.
 
 A `webdriver` is just an executable that starts up a browser in an automation mode, and issues the commands to that browser. There can be multiple browsers open for a single webdriver.
+
+One _key_ point to raise here is that this webdriver is remote. Even if it's on the same machine it still acts as a server, so moving the driver to your neighbors machine or across the globe should be the same as running it locally (aside from latency issues). This enables services like [Browserstack](http://browserstack.com) to offload the actual running of a browser from their users.
 
 ---
 
