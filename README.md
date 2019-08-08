@@ -23,7 +23,7 @@ let body = session.find.css("#sign-in")
 session.execute("arguments[0].remove()", [body])
 ```
 
-Then this code is sent to the webdriver at the endpoint `{webdriver url}/session/{session id}/element` where it's inserted into the browser and the result is returned.
+Then this code is sent to the webdriver at the endpoint `{webdriver url}/session/{session id}/element` where it's inserted into the browser, executed by the browser, then receives a response from the browser and returns that to the calling program (out python code).
 
 A `webdriver` is just an executable that starts up a browser in an automation mode, and issues the commands to that browser. There can be multiple browsers open for a single webdriver.
 
