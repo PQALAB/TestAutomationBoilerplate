@@ -1,7 +1,5 @@
 # TestAutomationBoilerplate
 
----
-
 ## Read Me!
 
 ### Background on web automation
