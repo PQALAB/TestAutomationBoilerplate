@@ -38,6 +38,7 @@ Verify the large HOMEBREW text links to the homepage
     ...  2. Find a locator for the homebrew title
     ...  3. use href to determine where that link directs to
     ...  4. create an assertion to verify that is homebrew.sh
+    Pass Execution  not implemented, skipping
 
 Verify the user can change the language using the selector
     [Documentation]  There is a language dropdown on the homepage. Verify that 
@@ -47,8 +48,10 @@ Verify the user can change the language using the selector
     ...  2. Find a locator for the language selector
     ...  3. Select a language from that selector
     ...  4. Verify the page has changed language
-    # Use one of
+    # Use one of these keywords to select from a list
     # Select From List By Value *
+    Pass Execution  not implemented, skipping
+
 
 *** Keywords ***
 Scroll and Click Element

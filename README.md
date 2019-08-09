@@ -25,9 +25,9 @@ session.execute("arguments[0].remove()", [body])
 
 Then this code is sent to the webdriver at the endpoint `{webdriver url}/session/{session id}/element` where it's inserted into the browser, executed by the browser, then receives a response from the browser and returns that to the calling program (out python code).
 
-A `webdriver` is just an executable that starts up a browser in an automation mode, and issues the commands to that browser. There can be multiple browsers open for a single webdriver.
+A `webdriver` is just an executable that starts up a browser in a automation mode, and issues the commands to that browser. There can be multiple browsers open for a single webdriver.
 
-One _key_ point to raise here is that this webdriver is remote. Even if it's on the same machine it still acts as a server, so moving the driver to your neighbors machine or across the globe should be the same as running it locally (aside from latency issues). This enables services like [Browserstack](http://browserstack.com) to offload the actual running of a browser from their users.
+One key point to raise here is that this webdriver is remote. Even if it's on the same machine it still acts as a server, so moving the driver to your neighbors machine or across the globe should be the same as running it locally (aside from latency issues). This enables services like [Browserstack](http://browserstack.com) to offload the actual running of a browser from their users.
 
 ---
 
@@ -43,9 +43,10 @@ The framework offers a way to write tests in natural language, translate the tes
 Out of the box RF comes with no browser automation. But Robotframework is _highly extensible_ meaning [libraries](https://robotframework.org/#libraries) can added easily.
 
 ---
+
 ## Resources
 
-* Check out the examples on the [official RobotFramework site](https://robotframework.org/)
+* Check out the examples (and other stuff) on the [official RobotFramework site](https://robotframework.org/)
 * [RobotFramework built in documentation](http://robotframework.org/robotframework/latest/libraries/BuiltIn.html)
 * [SeleniumLibrary documentation](http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
 * [xpath cheatsheet](https://devhints.io/xpath)
@@ -54,6 +55,14 @@ Out of the box RF comes with no browser automation. But Robotframework is _highl
 * [What is selenium?](https://www.seleniumhq.org/docs/01_introducing_selenium.jsp)
 
 ## Setup
+
+### Mac instructions
+
+* Install [brew](https://brew.sh/)
+* Install python with brew
+* Install chromedriver
+    * (optionally with brew, or [download](http://chromedriver.chromium.org/downloads) it and move it to /usr/local/bin)
+* Install python packages to use robot framework:
 
 ```bash
 python3 -m pip install -r requirements.txt
@@ -68,8 +77,7 @@ python3 -m robot --help
 # Run the tests
 python3 -m robot -d results tests/
 
-# View results (stored in results)
-# (Mac only)
+# View results (stored in results/log.html)
 open results/log.html
 ```
 
