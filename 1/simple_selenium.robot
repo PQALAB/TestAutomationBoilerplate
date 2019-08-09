@@ -50,6 +50,7 @@ Verify the user can change the language using the selector
     ...  4. Verify the page has changed language
     # Use one of these keywords to select from a list
     # Select From List By Value *
+    # http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Select%20From%20List%20By%20Index
     Pass Execution  not implemented, skipping
 
 
