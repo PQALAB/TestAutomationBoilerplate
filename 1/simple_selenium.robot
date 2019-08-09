@@ -9,7 +9,7 @@ ${test site}  https://brew.sh/
 ${value props locator}  id:question
 
 *** Test Cases ***
-Open the site and take a picture
+Open the site and take a screenshot
     [Documentation]  #TODO
     Go To  ${test site}
     Capture Page Screenshot
@@ -51,7 +51,11 @@ Verify the user can change the language using the selector
     # Use one of these keywords to select from a list
     # Select From List By Value *
     # http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Select%20From%20List%20By%20Index
-    Pass Execution  not implemented, skipping
+    [Setup]  Go To  ${test site}
+    Page Should Contain Element  id:language
+    Select From List  id:language  ja
+    Page Should Contain  インストール
+    Capture Page Screenshot
 
 
 *** Keywords ***
