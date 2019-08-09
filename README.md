@@ -1,5 +1,8 @@
 # TestAutomationBoilerplate
 
+* [Setup Mac](https://docs.google.com/document/d/1bh2_wzEJmjA8AaLVQNr_N8NqOGvpB8BDkZ9KnzN8A7w/edit)
+* [Setup Windows](https://docs.google.com/document/d/1196gUfSJRje6_BML7HnQ6ofLDhzS76phnncyNPCX9gY/edit)
+
 ## Read Me!
 
 ### Background on web automation
